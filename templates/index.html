@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GenAI-Bot</title>
+    <title id="title">Chat with </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/styles.css">
@@ -91,6 +91,7 @@
             <script>
                 const urlParams = new URLSearchParams(window.location.search)
                 const character = urlParams.get('character');
+                $("#title").append(character);
                 $("#header1").append(character);
                 $("#header4").append(`Ask ${character} a math or science question!`)
                 $("#botText").append(`Hi! I'm ${character}!`)
