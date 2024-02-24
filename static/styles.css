@@ -1,0 +1,40 @@
+html {
+    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-family: 'Montserrat'; /* this should be the rest of the output you got from Google Fonts */
+  }
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+.container {
+    text-align: center;
+    left: 0;
+    right: 0;
+   }
+
+.container2 {
+    text-align: center;
+}
+
+.main {
+    width: 700px;
+    height:120px;
+    min-height: 60px;
+    background-color: #C88EE3;
+    margin: auto;
+    border: 5px solid #C88EE3;
+    padding:10px;
+    word-wrap:break-word;
+    border-radius: 25px;
+  }
+
+.button-container {
+    display: flex;
+  }
