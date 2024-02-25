@@ -1,54 +1,54 @@
 html {
-    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
-    font-family: 'Montserrat'; /* this should be the rest of the output you got from Google Fonts */
-  }
+  font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: 'Montserrat'; /* this should be the rest of the output you got from Google Fonts */
+}
 
 h1 {
-    font-size: 60px;
-    text-align: center;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
+  font-size: 60px;
+  text-align: center;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 h2 {
-    font-size: 40px;
-    text-align: center;
-  }
-  
+  font-size: 40px;
+  text-align: center;
+}
+
 .container {
-    text-align: center;
-    left: 0;
-    right: 0;
-   }
+  text-align: center;
+  left: 0;
+  right: 0;
+ }
 
 .container2 {
-    text-align: center;
+  text-align: center;
 }
 
 .main {
-    opacity: 0;
-    width: 700px;
-    height: 120px;
-    background-color: #C88EE3;
-    margin: auto;
-    border: 5px solid #C88EE3;
-    padding:10px;
-    word-wrap:break-word;
-    border-radius: 25px;
-    justify-content: center;
-    animation: fadeInAnimation ease 1s;
-    animation-delay: 0.75s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
-.dora {
   opacity: 0;
+  width: 700px;
+  height: 120px;
+  background-color: #C88EE3;
+  margin: auto;
+  border: 5px solid #C88EE3;
+  padding:10px;
+  word-wrap:break-word;
+  border-radius: 25px;
+  justify-content: center;
   animation: fadeInAnimation ease 1s;
-  animation-delay: 1.5s;
+  animation-delay: 0.75s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.dora {
+opacity: 0;
+animation: fadeInAnimation ease 1s;
+animation-delay: 1.5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
 }
 
 .goofy {
@@ -74,16 +74,16 @@ h2 {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-  
-.button-container {
-    display: flex;
-  }
 
-  @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
+  100% {
+      opacity: 1;
+  }
+}
+
+.button-container {
+  display: flex;
+}

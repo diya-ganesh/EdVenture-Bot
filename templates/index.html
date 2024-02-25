@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <style>
         * {
             box-sizing: border-box
         }
+        
 /* Set height of body and the document to 100% */
         body, html {
             height: 100%;
             margin: 0;
+            font-family: 'Montserrat';
+            font-size: 22px;
             font-family: Arial;
             animation: fadeInAnimation ease 1s;
             animation-iteration-count: 1;
@@ -39,8 +43,8 @@
       }
       .userText {
         color: white;
-        font-family: monospace;
         font-size: 17px;
+        font-family: monospace;
         text-align: right;
         line-height: 30px;
       }
@@ -51,10 +55,10 @@
       }
       .botText {
         color: white;
-        font-family: monospace;
         font-size: 17px;
         text-align: left;
         line-height: 30px;
+        font-family: monospace;
       }
       .botText span {
         background-color: #4169e1;
@@ -72,6 +76,10 @@
         margin-right: auto;
         width: 78%;
         margin-top: 60px;
+        border: 1px solid black;
+      }
+      .backButton {
+        padding: 20px;
       }
     </style>
 </head>
@@ -84,7 +92,7 @@
             <div>
                 <div id="chatbox">
                     <p class="botText">
-                        <span id="botText"></span>
+                        <span id="botText" align="left"></span>
                     </p>
                 </div>
                 <div id="userInput">
@@ -94,7 +102,7 @@
             <script>
                 const urlParams = new URLSearchParams(window.location.search)
                 const character = urlParams.get('character');
-                $("#title").append(character);
+                $("#title").append(character)
                 $("#header1").append(character);
                 $("#header4").append(`Ask ${character} a question!`)
                 $("#botText").append(`Hi! I'm ${character}!`)
