@@ -38,11 +38,43 @@ h2 {
     border-radius: 25px;
     justify-content: center;
     animation: fadeInAnimation ease 3s;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
 
+.dora {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.goofy {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 3.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.spongebob {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 4.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.desc {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+  
 .button-container {
     display: flex;
   }
