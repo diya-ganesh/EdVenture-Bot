@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EdVenture Bot</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="/static/styles.css">
 <style>
-body {
-    font-family: 'Montserrat';font-size: 22px;
-}
+    body {
+        font-family: 'Montserrat';font-size: 22px;
+    }
+
+    #textbox { 
+    border: 1px solid black;
+    padding: 10px; 
+    width: 700px;
+    height: auto;
+    border-radius: 10px; 
+    align-self: center;
+    margin: auto;
+    background-color: #C88EE3;
+    } 
 </style>
 </head>
 <body>
     <br>
     <br>
-    <h1>Welcome to *insert name*</h1>
+    <h1>Welcome to EdVenture Bot!</h1>
 
     <br>
     <br>
 
-    <div class="container" align="">
+    <div class="container">
         <div class="main">
             <h2>Pick a character below</h2>
         </div>
@@ -31,15 +42,26 @@ body {
     <br>
 
     <div class="container2">
-        <a href="/chatbot?character=Dora" style="margin: 30px 30px 30px 30px;"> <img src="https://assets.nickjr.com/uri/mgid:arc:imageassetref:shared.nickjr.us:1bf56408-16a6-4079-b160-61906899d07d?quality=0.7&gen=ntrn&legacyStatusCode=true" 
+        <a class="dora" href="/chatbot?character=Dora" style="margin: 30px 30px 30px 30px;"> <img src="https://assets.nickjr.com/uri/mgid:arc:imageassetref:shared.nickjr.us:1bf56408-16a6-4079-b160-61906899d07d?quality=0.7&gen=ntrn&legacyStatusCode=true" 
             alt="Dora" style="width:200px;height:200px;"></a>
 
-        <a href="/chatbot?character=Goofy" style="margin: 30px 30px 30px 30px;"> <img src="https://lumiere-a.akamaihd.net/v1/images/ct_mickeymouseandfriends_goofy_ddt-16970_5d1d64dc.jpeg" 
+        <a class="goofy" href="/chatbot?character=Goofy" style="margin: 30px 30px 30px 30px;"> <img src="https://lumiere-a.akamaihd.net/v1/images/ct_mickeymouseandfriends_goofy_ddt-16970_5d1d64dc.jpeg" 
             alt="Goofy" style="width:200px;height:200px;" style="position:fixed; top:20px; left:30px;"></a>
     
-        <a href="/chatbot?character=Spongebob" style="margin: 30px 30px 30px 30px;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwfTqcop3BOzlzMuu1rbDrsg2eIJO6VmYrXw&usqp=CAU" 
+        <a class="spongebob" href="/chatbot?character=Spongebob" style="margin: 30px 30px 30px 30px;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwfTqcop3BOzlzMuu1rbDrsg2eIJO6VmYrXw&usqp=CAU" 
             alt="Spongebob" style="width:200px;height:200px;" style="position:fixed; top:20px; left:30px;"></a>
     </div>
 
+    <br>
+    <br>
+
+    <div id="textbox" class="desc" align="center">
+        <h3>It's time to explore!</h3>
+        <h6>EdVenture Bot allows you to explore the world of education through your favorite characters!
+            From diving into multiplication to the depths of Bikini Bottom to exploring space while avoiding
+            Swiper, EdVenture Bot makes learning fun. Ask your fictional friends your mind's pressing questions,
+            and they'll join you on your quest to find the answer. Try it out!
+        </h6>
+    </div>
    
 </html>

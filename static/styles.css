@@ -6,6 +6,9 @@ html {
 h1 {
   font-size: 60px;
   text-align: center;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 h2 {
@@ -24,15 +27,61 @@ h2 {
 }
 
 .main {
+  opacity: 0;
   width: 700px;
-  height:120px;
-  min-height: 60px;
+  height: 120px;
   background-color: #C88EE3;
   margin: auto;
   border: 5px solid #C88EE3;
   padding:10px;
   word-wrap:break-word;
   border-radius: 25px;
+  justify-content: center;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.dora {
+opacity: 0;
+animation: fadeInAnimation ease 1s;
+animation-delay: 1.5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+.goofy {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.spongebob {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.desc {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .button-container {

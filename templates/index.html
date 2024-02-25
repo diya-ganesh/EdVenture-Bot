@@ -4,6 +4,7 @@
     <title id="title">Chat with </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <style>
         * {
@@ -16,28 +17,34 @@
             margin: 0;
             font-family: 'Montserrat';
             font-size: 22px;
+            font-family: Arial;
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
         }
         #chatbox {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 80%;
         margin-top: 60px;
       }
       #userInput {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 80%;
         margin-top: 60px;
       }
       #textInput {
         width: 90%;
         border: none;
         border-bottom: 3px solid black;
+        font-family: monospace;
         font-size: 17px;
       }
       .userText {
         color: white;
         font-size: 17px;
+        font-family: monospace;
         text-align: right;
         line-height: 30px;
       }
@@ -51,11 +58,12 @@
         font-size: 17px;
         text-align: left;
         line-height: 30px;
+        font-family: monospace;
       }
       .botText span {
         background-color: #4169e1;
         padding: 10px;
-        border-radius: 2px;
+        border-radius: 6px;
       }
       #tidbit {
         position: absolute;
@@ -66,8 +74,8 @@
       .boxed {
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        margin-top: 10px;
+        width: 78%;
+        margin-top: 60px;
         border: 1px solid black;
       }
       .backButton {
@@ -88,7 +96,7 @@
                     </p>
                 </div>
                 <div id="userInput">
-                    <input id="textInput" type="text" name="msg" placeholder="Message" />
+                    <input id="textInput" type="text" name="msg" placeholder="Ask a question..." />
                 </div>
             </div>
             <script>
@@ -96,7 +104,7 @@
                 const character = urlParams.get('character');
                 $("#title").append(character)
                 $("#header1").append(character);
-                $("#header4").append(`Ask ${character} a math or science question!`)
+                $("#header4").append(`Ask ${character} a question!`)
                 $("#botText").append(`Hi! I'm ${character}!`)
                 function getBotResponse() {
                     var rawText = $("#textInput").val();

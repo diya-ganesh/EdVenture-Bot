@@ -17,7 +17,7 @@ def get_completion(prompt, character, previous_questions_and_answers, model="gpt
                          I have no previous knowledge in this topic. If you are asked a math question, 
                          be very careful about arithmetic, and don’t give final answers but rather 
                          walk me through the steps and explain the concepts. 
-                         Remember to answer like you are {character}'''})
+                         Remember to answer like you are {character} and your goal is to teach me!'''})
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
