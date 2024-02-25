@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 app = Flask(__name__)
 def get_completion(prompt, character, model="gpt-3.5-turbo"):
     
@@ -11,7 +11,7 @@ def get_completion(prompt, character, model="gpt-3.5-turbo"):
                          I have no previous knowledge in this topic. If you are asked a math question, 
                          be very careful about arithmetic, and don’t give final answers but rather 
                          walk me through the steps and explain the concepts. 
-                         Remember to answer like you are {character}'''}]
+                         Remember to answer like you are {character} and your goal is to teach me!'''}]
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,

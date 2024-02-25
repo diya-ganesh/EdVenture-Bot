@@ -85,7 +85,7 @@
                     </p>
                 </div>
                 <div id="userInput">
-                    <input id="textInput" type="text" name="msg" placeholder="Message" />
+                    <input id="textInput" type="text" name="msg" placeholder="Ask a question..." />
                 </div>
             </div>
             <script>
@@ -93,7 +93,7 @@
                 const character = urlParams.get('character');
                 $("#title").append(character);
                 $("#header1").append(character);
-                $("#header4").append(`Ask ${character} a math or science question!`)
+                $("#header4").append(`Ask ${character} a question!`)
                 $("#botText").append(`Hi! I'm ${character}!`)
                 function getBotResponse() {
                     var rawText = $("#textInput").val();
