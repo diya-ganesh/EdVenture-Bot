@@ -6,7 +6,7 @@ html {
 h1 {
     font-size: 60px;
     text-align: center;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
@@ -37,40 +37,40 @@ h2 {
     word-wrap:break-word;
     border-radius: 25px;
     justify-content: center;
-    animation: fadeInAnimation ease 3s;
-    animation-delay: 1.5s;
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
 
 .dora {
   opacity: 0;
-  animation: fadeInAnimation ease 3s;
-  animation-delay: 3s;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .goofy {
   opacity: 0;
-  animation: fadeInAnimation ease 3s;
-  animation-delay: 3.75s;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .spongebob {
   opacity: 0;
-  animation: fadeInAnimation ease 3s;
-  animation-delay: 4.5s;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 2.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .desc {
   opacity: 0;
-  animation: fadeInAnimation ease 3s;
-  animation-delay: 6s;
+  animation: fadeInAnimation ease 1s;
+  animation-delay: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
