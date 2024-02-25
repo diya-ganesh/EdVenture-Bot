@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import openai
 
-openai.api_key = "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"
+openai.api_key = #ADD YOUR KEY HERE
 app = Flask(__name__)
 previous_questions_and_answers = []
 messages = []
